@@ -32,12 +32,12 @@ jobs:
     - name: Tag Image
       run: |
         docker tag foodie-app:latest \
-        ${{ secrets.ECR_REGISTRY }}/foodie-app:latest
+        ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
 
     - name: Push Image
       run: |
         docker push \
-        ${{ secrets.ECR_REGISTRY }}/foodie-app:latest
+        ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
 
     - name: Deploy to ECS
       run: |
