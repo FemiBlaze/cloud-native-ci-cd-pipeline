@@ -3,7 +3,7 @@ variable "aws_region" {
     type        = string
     default     = "us-east-1"
 }
-variable "app-name" {
+variable "app_name" {
     description = "The name of the application to deploy"
     type        = string
     default     = "foodie-app"
