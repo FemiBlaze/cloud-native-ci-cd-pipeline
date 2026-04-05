@@ -11,7 +11,7 @@ variable "app_name" {
 variable "container_port" {
     description = "The port on which the container listens"
     type        = number
-    default     = 8080
+    default     = 80
 }
 variable "cpu" {
     description = "The number of CPU units to allocate for the task"
